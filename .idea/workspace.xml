@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/chameleon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/src/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" />
-    </list>
+    <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
     "Node.js.client.ts.executor": "Run",
     "Node.js.server.executor": "Run",
     "Node.js.server.ts.executor": "Run",
@@ -81,6 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\miles\\projects\\Personal Projects\\chameleon\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -138,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759035299378</updated>
-      <workItem from="1759035300721" duration="5028000" />
+      <workItem from="1759035300721" duration="5439000" />
     </task>
     <servers />
   </component>
