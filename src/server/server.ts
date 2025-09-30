@@ -6,27 +6,29 @@ function randomInt(min: number, max: number): number {
 
 const io = new Server(3000, {
 	cors: {
-		origin: [
-			"http://localhost:8080",
-			"http://localhost:5173",
-			"https://milestodtfeld.com",
-		]
+		origin: "*"
 	}
 });
 
+const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef"
+	.split(", ")
+let secretWord: string = "Press new round to randomize the word and chameleon!";
 let clients: Socket[] = [];
 
-io.on("connect", socket => {
-	clients.push(socket);
+io.on("connect", clientSocket => {
+	clients.push(clientSocket);
 	
-	socket.on("disconnect", () => {
-		clients = clients.filter(s => s !== socket);
-		console.log(clients.length);
+	function updatePlayerCount() {
+		clientSocket.broadcast.emit("update-player-count", clients.length);
+	}
+	
+	clientSocket.on("disconnect", () => {
+		clients = clients.filter(s => s !== clientSocket);
+		updatePlayerCount();
 	});
 	
-	socket.on("start-round", (wordBank: string[]) => {
-		console.log(wordBank);
-		const secretWord: string = wordBank[randomInt(0, wordBank.length - 1)];
+	clientSocket.on("start-round", () => {
+		secretWord = wordBank[randomInt(0, wordBank.length - 1)];
 		const chameleon: Socket = clients[randomInt(0, clients.length - 1)];
 		for(const client of clients) {
 			client.emit("new-round",
@@ -36,6 +38,7 @@ io.on("connect", socket => {
 		}
 	});
 	
-	console.log(clients.length);
+	clientSocket.emit("initialize", secretWord, wordBank, clients.length);
+	updatePlayerCount();
 });
 
