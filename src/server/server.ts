@@ -10,9 +10,14 @@ const io = new Server(3000, {
 	}
 });
 
-const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef"
-	.split(", ")
-let secretWord: string = "Press new round to randomize the word and chameleon!";
+const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef, function pointer"
+	.split(", ");
+// const wordBank: string[] = "quarter mile, global village, Salsarita's, crossroads, tobi, spencer, miles, cj, gio, seth, computer science, engineering, asl interpreting"
+// 	.split(", ");
+// const wordBank: string[] = "Dog, cat, lion, tiger, bear, elephant, giraffe, zebra, monkey, horse, cow, pig, sheep, goat, chicken, duck, fish, bird, snake, turtle"
+// 	.split(", ");
+const defaultSecretWord = "Press new round to randomize the word and chameleon!"
+let secretWord: string = defaultSecretWord;
 let clients: Socket[] = [];
 
 io.on("connect", clientSocket => {
@@ -25,6 +30,9 @@ io.on("connect", clientSocket => {
 	clientSocket.on("disconnect", () => {
 		clients = clients.filter(s => s !== clientSocket);
 		updatePlayerCount();
+		
+		if(clients.length === 0)
+			secretWord = defaultSecretWord;
 	});
 	
 	clientSocket.on("start-round", () => {
