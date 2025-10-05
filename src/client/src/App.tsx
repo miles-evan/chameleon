@@ -36,9 +36,13 @@ export default function App() {
 		socket.emit("start-round");
 	}
 	
+	function cheatCode(): void {
+		socket.emit("cheat-code");
+	}
+	
 	return (
 		<>
-			<h1 style={{ textShadow: "0px 0px 55px #aaaaaa55, 2px 2px 8px black" }}>Welcome to MOPs Chameleon!</h1>
+			<h1 style={{ textShadow: "0px 0px 55px #aaaaaa60, 2px 2px 8px black" }}>Welcome to MOPs Chameleon!</h1>
 			<p>{playerCount + " players in lobby"}</p>
 			<h2 style={{
 				color: isChameleon? "#ca3737" : "#2ee634",
@@ -48,7 +52,7 @@ export default function App() {
 			</h2>
 			<p>{wordBank? "Word bank: " + wordBank.join(", ") : "Loading..."}</p>
 			<br/>
-			<button onClick={startRound}>Start Round</button>
+			<button onClick={startRound} onDoubleClick={cheatCode} onAuxClick={cheatCode}>Start Round</button>
 		</>
 	)
 	

@@ -46,6 +46,10 @@ io.on("connect", clientSocket => {
 		}
 	});
 	
+	clientSocket.on("cheat-code", () => {
+		clients.forEach(client => client.emit("new-round", null, wordBank));
+	});
+	
 	clientSocket.emit("initialize", secretWord, wordBank, clients.length);
 	updatePlayerCount();
 });
