@@ -10,8 +10,10 @@ const io = new Server(3000, {
 	}
 });
 
-const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef, function pointer"
-	.split(", ");
+const wordBank: string[] = "stack, heap, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef, function pointer, compiled languages, interpreted languages, lexical analysis, syntax analysis, semantic analysis, intermediate code generator, code optimizer, code generator, preprocessor, compiler, assembler, linker, loader, statically typed, dynamically typed, weakly typed, strongly typed"
+	.split(", ")
+// const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef, function pointer"
+// 	.split(", ");
 // const wordBank: string[] = "quarter mile, global village, Salsarita's, crossroads, tobi, spencer, miles, cj, gio, seth, computer science, engineering, asl interpreting"
 // 	.split(", ");
 // const wordBank: string[] = "Dog, cat, lion, tiger, bear, elephant, giraffe, zebra, monkey, horse, cow, pig, sheep, goat, chicken, duck, fish, bird, snake, turtle"
@@ -50,7 +52,7 @@ io.on("connect", clientSocket => {
 		clients.forEach(client => client.emit("new-round", null, wordBank));
 	});
 	
-	clientSocket.emit("initialize", secretWord, wordBank, clients.length);
+	clientSocket.emit("initialize", defaultSecretWord, wordBank, clients.length);
 	updatePlayerCount();
 });
 
