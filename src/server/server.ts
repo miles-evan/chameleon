@@ -18,7 +18,8 @@ const wordBank: string[] = "stack, heap, void*, NULL, dereference, dangling poin
 // 	.split(", ");
 // const wordBank: string[] = "Dog, cat, lion, tiger, bear, elephant, giraffe, zebra, monkey, horse, cow, pig, sheep, goat, chicken, duck, fish, bird, snake, turtle"
 // 	.split(", ");
-const defaultSecretWord = "Press new round to randomize the word and chameleon!"
+const defaultSecretWord = "Press new round to randomize the word and chameleon!";
+const roundStartedMsg = "Currently in the middle of a round, please wait until the next one!"
 let secretWord: string = defaultSecretWord;
 let clients: Socket[] = [];
 
@@ -52,7 +53,7 @@ io.on("connect", clientSocket => {
 		clients.forEach(client => client.emit("new-round", null, wordBank));
 	});
 	
-	clientSocket.emit("initialize", defaultSecretWord, wordBank, clients.length);
+	clientSocket.emit("initialize", secretWord === defaultSecretWord? secretWord : roundStartedMsg, wordBank, clients.length);
 	updatePlayerCount();
 });
 

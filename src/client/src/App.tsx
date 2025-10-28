@@ -12,8 +12,8 @@ export default function App() {
 	const [isChameleon, setIsChameleon] = useState(false);
 	
 	useEffect(() => {
-		socket.on("initialize", (initialWord: string, bank: string[], players: number) => {
-			setSecretWord(initialWord);
+		socket.on("initialize", (secretWord: string, bank: string[], players: number) => {
+			setSecretWord(secretWord);
 			wordBank = bank;
 			setPlayerCount(players);
 		});
@@ -30,7 +30,7 @@ export default function App() {
 			socket.removeAllListeners("new-round");
 			socket.removeAllListeners("update-player-count");
 		}
-	});
+	}, []);
 	
 	function startRound(): void {
 		socket.emit("start-round");

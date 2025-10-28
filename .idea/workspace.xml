@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,7 @@
       <recent name="C:\Users\miles\projects\Personal Projects\chameleon\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev -- --host --port 80">
+  <component name="RunManager" selected="Node.js.server.ts">
     <configuration name="server.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/server/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -130,7 +131,9 @@
       <workItem from="1760882308390" duration="237000" />
       <workItem from="1761174278941" duration="763000" />
       <workItem from="1761179327238" duration="13000" />
-      <workItem from="1761237757016" duration="1476000" />
+      <workItem from="1761237757016" duration="1541000" />
+      <workItem from="1761328746833" duration="32000" />
+      <workItem from="1761694314266" duration="750000" />
     </task>
     <servers />
   </component>
