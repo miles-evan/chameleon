@@ -6,9 +6,9 @@
 
 ## Setup directions:
 1. **Clone the repository. Run:**
-- _git clone https://github.com/miles-evan/chameleon.git_
+- ```git clone https://github.com/miles-evan/chameleon.git```
 2. **Install dependencies. Run:**
-- _npm install_
+- ```npm install```
 3. **Set the IP of the server**
 - Go to App.tsx (in src/client/src) and change the first line of code to have your IP address, so when people join the game, it'll connect to you
 - If your IP address ever randomly changes, you'll have to change this line
@@ -19,9 +19,9 @@
 
 ## Running directions
 1. **Start the server**
-- Run: _npm run start_
+- Run: ```npm run start```
 2. **Start the web page**
-- Run: _npm run host_
+- Run: ```npm run host```
 - It should tell you the url for people to join the webpage at
 
 When people join, it will say how many people are in the lobby. Press new round to randomly select a new word and chameleon.
