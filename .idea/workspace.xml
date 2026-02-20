@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/server/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -43,31 +47,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.client.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.server.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.server.ts.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/miles/projects/Personal Projects/chameleon/src/server.ts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev -- --host --port 80.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev -- --host.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\miles\\projects\\Personal Projects\\chameleon\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.client.ts.executor": "Run",
+    "Node.js.server.executor": "Run",
+    "Node.js.server.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/miles/projects/Personal Projects/chameleon/src/server.ts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev -- --host --port 80.executor": "Run",
+    "npm.dev -- --host.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.host.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\miles\\projects\\Personal Projects\\chameleon\\src\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\miles\projects\Personal Projects\chameleon" />
@@ -76,7 +81,7 @@
       <recent name="C:\Users\miles\projects\Personal Projects\chameleon\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev -- --host --port 80">
+  <component name="RunManager" selected="npm.host">
     <configuration name="server.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/server/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -90,13 +95,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev -- --host --port 80" type="js.build_tools.npm" nameIsGenerated="true">
+    <configuration name="host" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/src/client/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="host" />
       </scripts>
-      <arguments value="-- --host --port 80" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -104,7 +108,7 @@
     <list>
       <item itemvalue="Node.js.server.ts" />
       <item itemvalue="npm.build" />
-      <item itemvalue="npm.dev -- --host --port 80" />
+      <item itemvalue="npm.host" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -151,7 +155,7 @@
       <workItem from="1770926475344" duration="3547000" />
       <workItem from="1771181752481" duration="4969000" />
       <workItem from="1771545849553" duration="2601000" />
-      <workItem from="1771622707604" duration="788000" />
+      <workItem from="1771622707604" duration="2286000" />
     </task>
     <servers />
   </component>

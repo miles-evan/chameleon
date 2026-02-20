@@ -4,7 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "tsc -p src/server && node dist/server/server.js",
+    "host": "npm --prefix src/client run host"
   },
   "dependencies": {
     "socket.io": "^4.8.1",
