@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/client/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/client/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/client/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/server.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/server/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -155,7 +159,7 @@
       <workItem from="1770926475344" duration="3547000" />
       <workItem from="1771181752481" duration="4969000" />
       <workItem from="1771545849553" duration="2601000" />
-      <workItem from="1771622707604" duration="2286000" />
+      <workItem from="1771622707604" duration="2618000" />
     </task>
     <servers />
   </component>
