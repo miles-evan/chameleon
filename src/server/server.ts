@@ -10,6 +10,7 @@ const io = new Server(3000, {
 	}
 });
 
+// Change this line to be whatever word bank you choose
 const wordBankStr: string = "compiler, assembler, pointer, array, struct, dereference, static, sizeof(), null terminator, dynamic memory, memory leak";
 const wordBank: string[] = wordBankStr.split(", ");
 
