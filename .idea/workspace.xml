@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddabbf8a-3524-4bfb-9237-f6a9a15489d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +65,7 @@
     &quot;npm.dev -- --host --port 80.executor&quot;: &quot;Run&quot;,
     &quot;npm.dev -- --host.executor&quot;: &quot;Run&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\miles\\projects\\Personal Projects\\chameleon\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -75,7 +78,7 @@
       <recent name="C:\Users\miles\projects\Personal Projects\chameleon\src\client" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.server.ts">
+  <component name="RunManager" selected="npm.dev -- --host --port 80">
     <configuration name="server.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/server/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -131,7 +134,25 @@
       <workItem from="1761179327238" duration="13000" />
       <workItem from="1761237757016" duration="1541000" />
       <workItem from="1761328746833" duration="32000" />
-      <workItem from="1761694314266" duration="1246000" />
+      <workItem from="1761694314266" duration="3688000" />
+      <workItem from="1761779079015" duration="1340000" />
+      <workItem from="1761959001089" duration="639000" />
+      <workItem from="1762223914556" duration="47000" />
+      <workItem from="1762991632521" duration="2082000" />
+      <workItem from="1763130117954" duration="23000" />
+      <workItem from="1763323876230" duration="3757000" />
+      <workItem from="1763428493393" duration="29000" />
+      <workItem from="1763934333009" duration="820000" />
+      <workItem from="1764080419448" duration="7000" />
+      <workItem from="1764286619084" duration="2892000" />
+      <workItem from="1764368876216" duration="6213000" />
+      <workItem from="1765917189149" duration="23000" />
+      <workItem from="1770335678810" duration="768000" />
+      <workItem from="1770439804911" duration="559000" />
+      <workItem from="1770830684301" duration="10000" />
+      <workItem from="1770926475344" duration="3547000" />
+      <workItem from="1771181752481" duration="4969000" />
+      <workItem from="1771545849553" duration="2601000" />
     </task>
     <servers />
   </component>

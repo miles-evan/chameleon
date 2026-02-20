@@ -1,7 +1,8 @@
 import { io } from "socket.io-client";
 import { useEffect, useState } from "react";
 
-const socket = io("http://129.21.114.32:3000", { secure: true });
+// For whoever is running the server, enter YOUR ip here (do http not https):
+const socket = io("http://129.21.136.160:3000", { secure: true });
 
 let wordBank: string[] = [];
 
@@ -25,6 +26,7 @@ export default function App() {
 			setPlayerCount(players);
 		});
 		
+		// cleanup
 		return () => {
 			socket.removeAllListeners("initialize");
 			socket.removeAllListeners("new-round");

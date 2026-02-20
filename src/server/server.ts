@@ -10,14 +10,9 @@ const io = new Server(3000, {
 	}
 });
 
-// const wordBank: string[] = "high level language, assembly, machine language, compiler, assembler, terminal, OO, imperative, functional, header file, macro, switch statement, static, unsigned, const, pointer, type casting, modulus, stack, heap, kernel, segmentation, paging, fragmentation, void*, NULL, dereference, dangling pointer, memory leak, struct, typedef, function pointer"
-// 	.split(", ");
-// const wordBank: string[] = "quarter mile, global village, Salsarita's, crossroads, tobi, spencer, miles, cj, gio, seth, computer science, engineering, asl interpreting"
-// 	.split(", ");
-// const wordBank: string[] = "Dog, cat, lion, tiger, bear, elephant, giraffe, zebra, monkey, horse, cow, pig, sheep, goat, chicken, duck, fish, bird, snake, turtle"
-// 	.split(", ");
-const wordBank: string[] = "dangling pointer, memory leak, struct, typedef, function pointer, compiled languages, interpreted languages, lexical analysis, syntax analysis, semantic analysis, intermediate code generator, code optimizer, preprocessor, compiler, assembler, linker, statically typed, dynamically typed, weakly typed, strongly typed, union, two’s compliment, bitwise operators"
-	.split(", ");
+const wordBankStr: string = "compiler, assembler, pointer, array, struct, dereference, static, sizeof(), null terminator, dynamic memory, memory leak";
+const wordBank: string[] = wordBankStr.split(", ");
+
 const defaultSecretWord = "Press new round to randomize the word and chameleon!";
 const roundStartedMsg = "Currently in the middle of a round, please wait until the next one!"
 let secretWord: string = defaultSecretWord;
