@@ -21,7 +21,7 @@
 1. **Start the server**
 - Run: _npm run start_
 2. **Start the web page**
-- Run: _npm run start_
+- Run: _npm run host_
 - It should tell you the url for people to join the webpage at
 
 When people join, it will say how many people are in the lobby. Press new round to randomly select a new word and chameleon.
